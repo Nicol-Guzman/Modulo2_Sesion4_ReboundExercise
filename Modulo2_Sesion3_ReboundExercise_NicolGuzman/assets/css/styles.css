@@ -1,0 +1,49 @@
+/* PARA RECREAR LA VISTA DEL CONTORNO DE LA TABLA
+SE USO EL ESTILO DE BORDE RIDGE EN COLOR BLANCO,
+MODIFICANDO SU ANCHURA Y EL ESPACIADO DEL BORDE */
+table {
+    border-width: 2.5px;
+    border-style: ridge;
+    border-color: white;
+    border-spacing: 2px;
+}
+.red {
+    background-color: red;
+}
+.white {
+    background-color: white;
+}
+.green {
+    background-color: green;
+}
+.grey {
+    background-color: grey;
+}
+.brown {
+    background-color: brown;
+}
+.blue {
+    background-color: blue;
+}
+.violet {
+    background-color: violet;
+}
+.pink {
+    background-color: pink;
+}
+.yellow {
+    background-color: yellow;
+}
+.turquoise {
+    background-color: turquoise;
+}
+.orange {
+    background-color: orange;
+}
+.purple {
+    background-color: purple;
+}
+.black {
+    color: white;
+    background-color: black;
+}
