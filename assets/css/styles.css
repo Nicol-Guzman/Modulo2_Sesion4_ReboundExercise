@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    /* font-size, letter-spacing y word-spacing se
+    colocaron en 0 para eliminar el espacio que
+    se generaba en los div al tratar de colocarlos
+    como inline-block */
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;    
+}
+
+/* MOBILE FIRST - PANTALLAS DE MENOS DE 500px */
+
+/* Firefox permite editar el tamaño responsivo de
+forma manual cuando se requiere al igual que permite
+agregar tamaños personalizados*/
+
+/* Dispositivo de prueba: Galaxy S10/S10+ */
+/* Tamaño Responsivo de Prueba: 360 x 760 px */
+
+.rosado{
+    background-color: pink;
+    height: 200px;
+}
+.verde{
+    background-color: green;
+    height: 200px;
+}
+.azul{
+    background-color: blue;
+    height: 100px;
+}
+
+.rojo{
+    background-color: red;
+    /* oculta en el tamaño mobile first */
+    display: none;
+}
+
+.morado{
+    background-color: purple;
+    /* oculta en el tamaño mobile first */
+    display: none; 
+}
+
+.gris{
+    background-color: grey;
+    height: 260px;
+}
+
+/* PANTALLA DE ENTRE 501px Y 750px */
+
+/* Dispositivo de prueba: Nexus 7 Android 600 x 960 px */
+/* Tamaño Responsivo de Prueba: 501 x 550 px */
+
+@media(min-width:501px) and (max-width:750px){
+    
+    .rosado{
+        height: 150px;
+    }
+    .verde{
+        display: inline-block;
+        width: 33.333%;
+        height: 150px;
+    }
+    .azul{
+        display: inline-block;
+        width: 33.333%;
+        height: 150px;
+    }
+    .rojo{
+        display: inline-block;
+        width: 33.333%;
+        height: 150px;
+    }
+    .morado{
+        display: inline-block;
+        width: 60%;
+        height: 250px;
+    }
+    .gris{
+        display: inline-block;
+        width: 40%;
+        height: 250px;
+    }
+}
+
+/* PANTALLA DE MAS DE 751px */
+
+/* Dispositivo de prueba: iPad mini 768 x 1024 px */
+/* Tamaño Responsivo de Prueba: 751 x 560 px */
+
+@media(min-width:751px){
+
+    .rosado{
+        height: 30px;
+    }
+    .verde{
+        height: 150px;
+    }
+    .azul{
+        height: 210px;
+    }
+    .rojo{
+        display: inline-block;
+        width: 33.333%;
+        height: 170px;
+    }
+    .morado{
+        display: inline-block;
+        width: 33.333%;
+        height: 170px;
+    }
+    .gris{
+        display: inline-block;
+        background-color: grey;
+        width: 33.333%;
+        height: 170px;
+    }
+}
